@@ -4,10 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class Whatsapp {
+public class WhatsappBomber {
 
 	public static void main(String[] args) throws Throwable {
 		// TODO Auto-generated method stub
+		
 		
 		WebDriver driver = new ChromeDriver();
 		
@@ -16,18 +17,16 @@ public class Whatsapp {
 		TimeUnit.SECONDS.sleep(35);
 		driver.findElement(By.xpath("//span[contains(@title,\"Rajdeep Bania\")]")).click();
 		TimeUnit.SECONDS.sleep(5);
-		driver.findElement(By.xpath("/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]")).sendKeys("Hi");
-<<<<<<< Updated upstream
-        	driver.findElement(By.xpath("/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[2]/button")).click();
 		
-		
-
-	}
-=======
+		for(int count = 0;count<10;count++)
+		{
+		driver.findElement(By.xpath("/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]")).sendKeys("Bomb!");
         driver.findElement(By.xpath("/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[2]/button")).click();
         TimeUnit.SECONDS.sleep(5);
-        driver.close();
-		}
->>>>>>> Stashed changes
+        }
+		
+		driver.close();
 
 }
+}
+
