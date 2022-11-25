@@ -15,14 +15,14 @@ public class WhatsappBomber {
 		
 		driver.get("https://web.whatsapp.com"); 
 		TimeUnit.SECONDS.sleep(35);
-		driver.findElement(By.xpath("//span[contains(@title,\"Rajdeep Bania\")]")).click();
+		driver.findElement(By.xpath("//span[contains(@title,\"Meenank M\")]")).click();
 		TimeUnit.SECONDS.sleep(5);
 		
-		for(int count = 0;count<10;count++)
+		for(int count = 0;count<100;count++)
 		{
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]")).sendKeys("Bomb!");
         driver.findElement(By.xpath("/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[2]/button")).click();
-        TimeUnit.SECONDS.sleep(5);
+        //TimeUnit.SECONDS.sleep(5);
         }
 		
 		driver.close();

@@ -17,17 +17,10 @@ public class Whatsapp {
 		driver.findElement(By.xpath("//span[contains(@title,\"Rajdeep Bania\")]")).click();
 		TimeUnit.SECONDS.sleep(5);
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]")).sendKeys("Hi");
-<<<<<<< Updated upstream
-        	driver.findElement(By.xpath("/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[2]/button")).click();
-		
-		
-
-	}
-=======
         driver.findElement(By.xpath("/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[2]/button")).click();
         TimeUnit.SECONDS.sleep(5);
         driver.close();
 		}
->>>>>>> Stashed changes
+
 
 }
