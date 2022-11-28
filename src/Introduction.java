@@ -7,7 +7,7 @@ public class Introduction {
 		
 	//invoking the browser (optional for older version of selenium)
 	
-        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
         
      // creating object of chromedriver to access all its methods
      // every browser driver has same methods when changing browser just need to modify the line below

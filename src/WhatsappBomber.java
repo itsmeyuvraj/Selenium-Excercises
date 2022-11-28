@@ -21,13 +21,11 @@ public class WhatsappBomber {
 		for(int count = 0;count<100;count++)
 		{
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]")).sendKeys("Bomb!");
-<<<<<<< HEAD
         driver.findElement(By.xpath("/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[2]/button")).click();
         //TimeUnit.SECONDS.sleep(5);
-=======
         	driver.findElement(By.xpath("/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[2]/button")).click();
         	//TimeUnit.SECONDS.sleep(5);
->>>>>>> b7c4948a299237a72a080f5702c50351a5eed6b3
+
         }
 		
 		driver.close();
