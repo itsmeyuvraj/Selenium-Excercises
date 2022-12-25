@@ -22,7 +22,7 @@ public class AmazonBuy {
 		
 		TimeUnit.SECONDS.sleep(2);
 		
-		driver.findElement(By.name("password")).sendKeys("qy@MgEi^XAzXx4"); // filling password
+		driver.findElement(By.name("password")).sendKeys(""); // filling password
 		driver.findElement(By.id("signInSubmit")).click(); //clicking on signin button
 		driver.findElement(By.id("nav-cart-count")).click();  // an overlay thats needs to be clicked before proceeding
 		driver.findElement(By.xpath("//*[@id=\"nav-cart-count-container\"]")).click(); // click on cart icon
