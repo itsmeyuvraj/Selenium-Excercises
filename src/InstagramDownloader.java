@@ -29,7 +29,7 @@ public class InstagramDownloader {
 		// Login into instagram
 		
 		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("memeticpolyalloy");
-		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("8KAs6ZcNivGsxJ");
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("");
 		driver.findElement(By.xpath("//button[@class='_acan _acap _acas']")).click();
 		
 		
